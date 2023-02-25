@@ -1,8 +1,8 @@
 package HomeWork_OOP.HomeWork_01;
 
-public abstract class VendingMachine {
+public interface VendingMachine <T extends HotDrinksVendingMachine>{
 
-    abstract void acceptingMoney();
-    abstract void productDelivery();
-    abstract void deliveryOfChange();
+    void acceptingMoney();
+    void productDelivery();
+    void deliveryOfChange();
 }

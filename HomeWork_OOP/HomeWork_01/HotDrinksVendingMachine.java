@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class HotDrinksVendingMachine extends VendingMachine {
+public class HotDrinksVendingMachine implements VendingMachine<HotDrinksVendingMachine> {
     private List<HotDrink> hotDrinks;
 
   
@@ -21,17 +21,14 @@ public class HotDrinksVendingMachine extends VendingMachine {
         return hotDrinks;
     }
 
-    @Override
     public void acceptingMoney() {
         System.out.println("Автомат принял деньги");
     }
 
-    @Override
     public void productDelivery() {
         System.out.print("Автомат выдал горячий напиток:");
     }
 
-    @Override
     public void deliveryOfChange() {
         System.out.println("Автомат выдал сдачу");
     }
